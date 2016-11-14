@@ -37,10 +37,14 @@ Use the starter code and commit each step of the exercise.
 
 * Modify the CSS so that the "square" class has a height and width of 10px and a margin of 0.
 * Change the event that changes your box colors from 'click' to 'mouseover'
-* Paint a picture!
 
 ###Commit 7
 
-* Replicate the functionality of a 'stamp' tool. Prompt the use for an image url using an input field, then use AJAX to load an image file, and use that as your pixel image.
+* Add a new tool to your program, the 'stamp' tool. 
+* The user should be able to pick either the paint tool (the one you already built in previous steps), or the new stamp tool.
+
+#### Stamp Tool Functionality
+
+* get an image url using an input field, then use AJAX to load the image file, and use that as your pixel image.
 
 ![art](http://i.imgur.com/3fsRWn4.jpg)
