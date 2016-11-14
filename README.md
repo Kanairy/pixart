@@ -43,4 +43,4 @@ Use the starter code and commit each step of the exercise.
 
 * Replicate the functionality of a 'stamp' tool. Prompt the use for an image url using an input field, then use AJAX to load an image file, and use that as your pixel image.
 
-![art](http://imgur.com/a/8y4dU)
+![art](http://i.imgur.com/3fsRWn4.jpg)
