@@ -12,10 +12,15 @@ $('#set-color').click(event, function() {
 
 // Commit 3. Fairly easy. Somewhat uncomfortable with normal js code in the middle of a bunch of jquery code and from the fact that I have a OOP mindset.
 for (var i = 0; i < 20; i++) {
-  $("body").append("<div class=square> </div>")
+  $("body").append("<div class=square></div>")
 }
 
 // Commit 4. Spen way too much time on this. I should really focus on making the code work, then thinking if it's good coding practise.
+// $('.square').click(function() {
+//   $(this).css("background", 'green')
+// })
+
+// Commit 5. It's ugly, but it works.
 $('.square').click(function() {
-  $(this).css("background", 'green')
+  $(this).css("background", $(".brush").css("background"))
 })
