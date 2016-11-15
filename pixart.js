@@ -10,7 +10,7 @@ for (var i = 0; i < 20; i++) {
   $('body').append($('<div>').addClass('square'));
 }
 
-$('.square').on('click', function(event) {
+$('.square').on('mouseover', function(event) {
   var brushColor = $('.brush').css('background-color')
   $(event.target).css('background-color', brushColor);
 })
