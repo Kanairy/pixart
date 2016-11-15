@@ -21,6 +21,11 @@ for (var i = 0; i < 20; i++) {
 // })
 
 // Commit 5. It's ugly, but it works.
-$('.square').click(function() {
+// $('.square').click(function() {
+//   $(this).css("background", $(".brush").css("background"))
+// })
+
+// Commit 6. I'm sure you realise that it's just copy and paste from Commit 5 with a single method change. Not sure about the whole pixel business, because they are already 10px by 10px with 0 margin. Great testing guys.
+$('.square').mouseover(function() {
   $(this).css("background", $(".brush").css("background"))
 })
