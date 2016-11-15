@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
   <title>i &hearts; js</title>
 </head>
+
 <body>
+
   <h1>Pixel Art!</h1>
+
+  <button id="tool-select">Brush/Stamp</button>
+
   <div class="controls">
-    <form id="form">
-      <input type="text" id="color-field" placeholder="Color">
-      <button id="set-color">Set Color</button>
-    </form>
-    <div class="brush"></div>
-    <form>
-      <input type="text" id="image-field" placeholder="Image URL">
-      <button id="set-image">Set Image</button>
-    </form>
-    <div class="image"></div>
+    <div class="brush-controls">
+      <h3>Brush</h3>
+      <form id="form">
+        <input type="text" id="color-field" placeholder="Color">
+        <button id="set-color">Set Color</button>
+      </form>
+      <div class="brush"></div>
+    </div>
+
+    <div class="stamp-controls">
+      <h3>Stamp</h3>
+      <form>
+        <input type="text" id="image-field" placeholder="Image URL">
+        <button id="set-image">Set Image</button>
+      </form>
+      <div class="image"></div>
+    </div>
   </div>
+
   <div class="canvas"></div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="pixart.js"></script>
 </body>
+
 </html>

@@ -12,8 +12,18 @@
   margin: 15px auto;
 }
 
+.stamp-controls {
+  display: none;
+}
+
+#tool-select {
+  display: block;
+  margin: 0 auto;
+}
+
 .canvas {
   width: 300px;
+  margin: 0 auto;
 }
 
 .square {
