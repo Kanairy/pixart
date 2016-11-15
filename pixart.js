@@ -24,5 +24,5 @@ function colorSquare(event){
     var $square = $('<div class="square">');
     $('body').append($square);
   }
-  $('.square').on("click", colorSquare);
+  $('.square').on("mouseover", colorSquare);
 })();
