@@ -10,3 +10,12 @@ setColor.addEventListener('enter', function(event) {
   var colorField = document.getElementById('color-field');
   boxColor.backgroundColor = colorField;
 });
+
+
+(function(){
+  for(var i = 0; i < 20; i++){
+    var div = document.createElement("div");
+    div.className = "square";
+    document.body.appendChild(div);
+  }
+})();
