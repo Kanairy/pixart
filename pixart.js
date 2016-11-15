@@ -22,6 +22,6 @@ $('#color-field').keypress(function(enter){
 
 
 for (var i = 0; i <= 20; i++){
-  var $div = $('<div>');
+  var $div = $('<div>').addClass("square");
   $('.main').append($div);
 }
