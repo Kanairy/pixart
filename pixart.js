@@ -1,10 +1,13 @@
 var $setColorBtn = $('#set-color');
 var $brushDiv = $('.brush');
+var $imageDiv = $('.image');
 var $colorInput = $('#color-field');
 var $canvas = $('.canvas');
 var $toolSelectBtn = $('#tool-select');
 var $brushControlsDiv = $('.brush-controls');
 var $stampControlsDiv = $('.stamp-controls');
+
+var activeTool = "brush";
 
 var changeBrushColor = function(e) {
   e.preventDefault();
@@ -12,12 +15,21 @@ var changeBrushColor = function(e) {
 }
 
 var changeColor = function(e) {
-  $(e.target).css('background', $brushDiv.css('background'));
+  if (activeTool === "brush") {
+    $(e.target).css('background', $brushDiv.css('background'));
+  } else {
+    $(e.target).css('background', $imageDiv.css('background'));
+  }
 }
 
 var changeTool = function() {
   $brushControlsDiv.toggle();
   $stampControlsDiv.toggle();
+  if (activeTool === "brush") {
+    activeTool = "stamp";
+  } else {
+    activeTool = "brush";
+  }
 }
 
 for (var i = 0; i < 100; i++) {
