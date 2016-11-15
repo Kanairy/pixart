@@ -21,4 +21,12 @@ $(document).ready(function() {
     $('body').append('<div class="square"></div>');
   }
 
+  // Commit 4
+  // doesn't work
+  var $squares = $('.square')
+
+  $squares.on('click', function() {
+    $(this).css("background-color", "green");
+  });
+
 });
