@@ -4,7 +4,10 @@
   background: #1B4370;
   margin: 15px auto;
 }
-
+#stamp-field {
+  width: 20px;
+  height: 20px;
+}
 .square {
   float: left;
   width: 10px;
