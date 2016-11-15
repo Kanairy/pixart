@@ -12,10 +12,14 @@ setColor.addEventListener('enter', function(event) {
 });
 
 
-(function(){
+var board = function() {
   for(var i = 0; i < 20; i++){
     var div = document.createElement("div");
     div.className = "square";
     document.body.appendChild(div);
   }
-})();
+};
+
+board.addEventListener('click', function(event) {
+  event.target.style.backgroundColor = green;
+});
