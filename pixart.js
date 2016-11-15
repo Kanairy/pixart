@@ -21,5 +21,5 @@ var board = function() {
 };
 
 board.addEventListener('click', function(event) {
-  event.target.style.backgroundColor = green;
+  event.target.style.backgroundColor = colorField;
 });
