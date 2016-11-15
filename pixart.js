@@ -19,6 +19,6 @@ for (var i = 0; i < 20; i++) {
 
   var $square = $('.square')
 
-  $('body').click(function(event) {
+  $('body .square').mouseover(function(event) {
     event.target.style.background = input.val()
   });
