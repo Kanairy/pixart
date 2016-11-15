@@ -13,6 +13,16 @@
       <button id="set-color">Set Color</button>
     </form>
     <div class="brush"></div>
+    <form id="stamp-form">
+      <input type="text" id="image-url-field">
+      <button>Set Image</button>
+    </form>
+    <div>
+      Tool: 
+      <input id="brush-radio-btn" name="tool" type="radio" value="brush" checked> <label for="brush-radio-btn">Brush</label>
+      <input id="stamp-radio-btn" name="tool" type="radio" value="stamp"> <label for="stamp-radio-btn">Stamp</label>
+    </div>
+    <div class="stamp"></div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="pixart.js"></script>
