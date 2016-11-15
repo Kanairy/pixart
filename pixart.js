@@ -14,7 +14,7 @@ var changeColor = function(e) {
 
 for (var i = 0; i < 20; i++) {
   var $squareDiv = $('<div class="square">');
-  $squareDiv.click(changeColor);
+  $squareDiv.hover(changeColor);
   $body.append($squareDiv);
 }
 
