@@ -11,5 +11,6 @@ for (var i = 0; i < 20; i++) {
 }
 
 $('.square').on('click', function(event) {
-  $(event.target).css('background-color', 'green');
+  var brushColor = $('.brush').css('background-color')
+  $(event.target).css('background-color', brushColor);
 })
