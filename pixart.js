@@ -20,3 +20,10 @@ for (var i = 0; i <= 20; i++) {
   var $newDiv = $('<div>').addClass('square');
   $('#square').append($newDiv);
 }
+
+// commit 4 changing color of squares to green on click
+$('.square').on('click', function(event) {
+  event.preventDefault();
+
+  $(event.target).css('background-color', 'green');
+})
