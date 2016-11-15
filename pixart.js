@@ -11,7 +11,7 @@ $(document).ready(function() {
     var color = $('#color-field').val();
     var $brushBox = $('.brush');
 
-    $brushBox.css("background-color", color);
+    $brushBox.css('background-color', color);
   });
 
   // Commit 3
@@ -21,13 +21,12 @@ $(document).ready(function() {
     $('body').append('<div class="square"></div>');
   }
 
-  // Commit 4 & 5
-  var $squares = $('.square')
+  // Commit 4, 5, 6
+  var $squares = $('.square');
 
-  $squares.on('click', function() {
+  $squares.mouseover(function() {
     var color = $('#color-field').val();
-    $(this).css("background-color", color);
+    $(this).css('background-color', color);
   });
-
 
 });
