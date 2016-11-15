@@ -4,3 +4,11 @@ $('#set-color').on('click',function(event) {
   var color = $('#color-field').val()
   $('.brush').css("background",color);
 })
+
+$('#set-color').on('keypress',function(event) {
+  event.preventDefault();
+  if(event.which === 13) {
+    var color = $('#color-field').val()
+    $('.brush').css("background",color);
+  }
+})
