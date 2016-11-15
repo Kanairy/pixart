@@ -1,4 +1,3 @@
-
 var $button = $('#set-color');
 var input = $('#color-field').val('enter a color');
 var $brush = $('.brush');
@@ -35,6 +34,8 @@ $brush2.click(function(e) {
   });
 });
 
+
+// incomplete
 var $button2 = $('#set-image');
 
 $button2.click(function(e) {
