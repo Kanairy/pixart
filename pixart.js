@@ -1,12 +1,6 @@
 var input = $('#color-field').val();
 var stampInput = $('#stamp-field').val();
-
-
-$('#set-color').click(function(event){
-  event.preventDefault()
-  $('.brush').css(
-    "background-color", input)
-})
+var brushStatus = 'color'
 
 var makeSquares = function(){
   for (var i = 0; i < 5000; i++) {
@@ -15,24 +9,36 @@ var makeSquares = function(){
   }
 }();
 
-$('.square').hover(function(event){
-  var brush = $('.brush').css(
-    "background-color")
-  $(event.target).css( "background-color", brush)
+$('#set-color').click(event => {
+  event.preventDefault()
+  $('.brush')
+  .css({
+    "background-color" : input,
+    'background-image' : 'none'
+  });
+  $('#color-field').val('');
+  brushStatus = 'color'
 })
 
-$('#set-stamp').click(function(event){
+$('.square').hover(event => {
+  var brush = $('.brush').css("background-" + brushStatus)
+  $(event.target).css( "background-" + brushStatus, brush)
+})
+
+
+$('#set-stamp').click(event => {
   event.preventDefault()
+
   $.ajax({
     url: 'http://www.omdbapi.com/',
-    data: { i: stampInput }
-  }).done(function(response){
-    console.log('received');
-    var movie = response;
-
+    data: { s: stampInput }
+  })
+  .done(response => {
+    var poster = response.Search[0].Poster
     $('.brush').css(
-      "background-image", 'image(' + movie.Poster + ')')
-
+      "background-image", 'url("' + poster + '")')
+      $('#stamp-field').val('');
+      brushStatus = 'image'
     });
 
 })
