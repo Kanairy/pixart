@@ -1,5 +1,5 @@
 
-$('#set-color').click (function(event){
+$('#set-color').click(function(event){
   event.preventDefault();
   console.log(event.target)
   var input = $('#color-field').val();
@@ -24,7 +24,7 @@ $(document).ready(function () {
     for (var i = 0; i < 21; i++) {
         $newdiv = $('<div class="brush" />')
         $('body').append($newdiv);
-        $newdiv.click (function(event){
+        $newdiv.mouseover (function(event){
           event.preventDefault();
           var input = $('#color-field').val();
           $(event.target).css("background-color", input);

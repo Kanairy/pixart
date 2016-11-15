@@ -25,3 +25,7 @@ h1 {
 body {
   background-image: url('ps_neutral.png');
 }
+
+
+/** Modify the CSS so that the "square" class has a height and width of 10px and a margin of 0.
+* Change the event that changes your box colors from 'click' to 'mouseover'*/
