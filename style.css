@@ -5,6 +5,14 @@
   margin: 15px auto;
 }
 
+.stamp {
+  width: 100px;
+  height: 100px;
+  background: url(http://www.agenda21course.com/wp-content/uploads/2013/03/Earth.jpg);
+  background-size: 100% 100%;
+  margin: 15px auto;
+}
+
 .square {
   float: left;
   width: 10px;
