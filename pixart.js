@@ -10,7 +10,7 @@ for (var i=0; i<20; i++) {
   $('body').append($square);
 }
 
-$('.square').click(function(event) {
+$('.square').mouseover(function(event) {
   var input = $('#color-field').val();
   $(event.target).css('backgroundColor', input);
 });
