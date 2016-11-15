@@ -22,7 +22,8 @@ for (var i = 0; i <= 20; i++) {
 }
 
 // commit 4 changing color of squares to green on click
-$('.square').on('click', function(event) {
+// commit 6 changed from click to mouseover
+$('.square').on('mouseover', function(event) {
   event.preventDefault();
 
 // commit 5 allow user to choose color by selecting in the input
