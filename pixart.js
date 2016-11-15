@@ -50,3 +50,26 @@ $('.square').on('mouseover',function(event) {
   $(event.target).css("background",color)
   //change div class background
 })
+
+//commit 7
+//use ajax to load image file
+
+$('.square').on('mouseover',function(event) {
+  var img = $('#img-field').val();
+
+  // var options = {
+  //   url: img,
+  //   method: 'get',
+  //   dataType: 'image/jpg'
+  // }
+  //change div class background
+
+//show search results - this is the response
+
+  var changeBrush = function() {
+    $(event.target).css('background-image','url('+img+')');
+  }
+  changeBrush();
+
+  // $.ajax(options).done(changeBrush)
+})
