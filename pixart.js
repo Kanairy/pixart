@@ -63,5 +63,4 @@ $("#set-url").on('click', function(event) {
   var $source = $('#url-field').val()
   var $url = 'url(' + $source + ')'
   $('.image').css({'background-image': $url,  'background-size': '70px' });
-
 });
