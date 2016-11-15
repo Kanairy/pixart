@@ -45,6 +45,6 @@ Use the starter code and commit each step of the exercise.
 
 #### Stamp Tool Functionality
 
-* get an image url using an input field, then use AJAX to load the image file, and use that as your pixel image.
+* get an movie name using an input field, then use AJAX to fetch the poster url of that movie using the omdb api and use that as your pixel image.
 
 ![art](http://i.imgur.com/3fsRWn4.jpg)
