@@ -16,3 +16,10 @@ for (var i = 0; i < 20; i++) {
   var $div = $("<div>", { "class": "square"});
   $('body').append($div)
 }
+
+  var $square = $('.square')
+
+  $('body').click(function(event) {
+    event.target.style.background = 'yellow'
+    // newsad.css("background-color", 'yellow');
+  });
