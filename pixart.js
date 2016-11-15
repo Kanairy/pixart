@@ -5,3 +5,8 @@ setColor.addEventListener('click', function(event) {
   var colorField = document.getElementById('color-field');
   boxColor.backgroundColor = colorField;
 });
+
+setColor.addEventListener('enter', function(event) {
+  var colorField = document.getElementById('color-field');
+  boxColor.backgroundColor = colorField;
+});
