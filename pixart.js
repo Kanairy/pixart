@@ -15,7 +15,7 @@ $('#color-field').on("keypress", checkKeypress);
 
 function colorSquare(event){
   var $square = $(event.target);
-  var color = "green";
+  var color = $($('.brush')[0]).css("background-color");
   $square.css("background-color", color)
 }
 
