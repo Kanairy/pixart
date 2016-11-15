@@ -16,6 +16,6 @@ var makeSquares = function(){
 }();
 
 $('.square').click(function(event){
-  console.log('square clicked');
-  $(event.target).css('background-color', 'green')
+  var input = $('#color-field').val();
+  $(event.target).css( "background-color", input)
 })
