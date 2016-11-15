@@ -12,3 +12,10 @@ function checkKeypress(event){
   }
 }
 $('#color-field').on("keypress", checkKeypress);
+
+(function(){
+  for (var i = 0; i < 20; i++){
+    var $square = $('<div class="square">');
+    $('body').append($square);
+  }
+})();
