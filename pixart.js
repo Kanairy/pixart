@@ -1,10 +1,10 @@
 // Grab DOM elements
 var $brush = $('.brush');
-var $setColorBtn = $('#set-color');
+var $form = $('#form');
 var $colorField = $('#color-field');
 
 // Set color of brush box to input color
-$setColorBtn.click(function(e) {
+$form.submit(function(e) {
   e.preventDefault();
 
   $brush.css('background-color', $colorField.val());
