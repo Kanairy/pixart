@@ -11,9 +11,11 @@ $( document ).ready(function() {
         $('.brush').css("background", inputValue);
     }
 
-    // $("#color-field").onEnter( function() {
-    //     $(this).val("Enter key pressed");                
-    // });
+   $('#color-field').on('keypress', function (e) {
+         if(e.which === 13){
+           changeColor();
+         }
+   });
 
     $("#set-color").on("click", changeColor);   
 
