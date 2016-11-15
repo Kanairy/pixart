@@ -20,3 +20,8 @@ var create20Divs = function() {
   }
 };
 create20Divs();
+
+// commit 4
+$('.square').on('click', function(event) {
+  $(this).css("background", 'green');
+});
