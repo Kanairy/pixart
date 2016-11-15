@@ -9,3 +9,7 @@ $('#set-color').on('click', function(event) {
 for (var i = 0; i < 20; i++) {
   $('body').append($('<div>').addClass('square'));
 }
+
+$('.square').on('click', function(event) {
+  $(event.target).css('background-color', 'green');
+})
