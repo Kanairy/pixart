@@ -20,7 +20,7 @@ $('#color-field').keypress(function(enter){
 // Create 20 divs of the "square" class and append them to the body
 // Hint: use .append()
 
-for (var i = 0; i <= 20; i++){
+for (var i = 0; i <= 100; i++){
   var $div = $('<div>').addClass("square");
   $('.main').append($div);
 }
@@ -38,4 +38,21 @@ $('.square').click(function() {
 $('.square').click(function() {
     var $input = $('#color-field').val();
      $(this).css({'background-color': $input});
+  });
+
+// Change the event that changes your box colors from 'click' to 'mouseover'
+
+$('.square').mouseover(function() {
+    var $input = $('#color-field').val();
+     $(this).css({'background-color': $input});
+  });
+
+// Add a new tool to your program, the 'stamp' tool.
+// The user should be able to pick either the paint tool (the one you already built in previous steps), or the new stamp tool.
+
+$('.square').mouseover(function() {
+    var $source = $('#url-field').val()
+    var $url = 'url(' + $source + ')'
+    $(this).css({'background-image': $url, 'background-size': '70px' });
+
   });
