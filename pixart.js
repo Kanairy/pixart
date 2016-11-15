@@ -18,8 +18,8 @@ for (var i = 0; i < NUM_SQUARES; i++) {
   $('body').append($square);
 }
 
-// Change square colour to brush colour on click
-$('body').on('click', '.square', function(e) {
+// Change square colour to brush colour
+$('body').on('mouseover', '.square', function(e) {
   var newColour = $brush.css('background-color');
   $(e.target).css('background-color', newColour);
 });
