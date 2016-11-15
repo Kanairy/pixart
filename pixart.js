@@ -17,8 +17,12 @@ $(document).ready(function(){
   }
 
   // COMMIT 4
-  $("body").on("click", ".square", function(e) {
-    $(e.target).css({ "background-color": "green" });
-  });
+  // $("body").on("click", ".square", function(e) {
+  //   $(e.target).css({ "background-color": "green" });
+  // });
 
+  //COMMIT 5
+  $("body").on("click", ".square", function(e) {
+    $(e.target).css({ "background-color": "#"+$("#color-field").val() });
+  });
 });
