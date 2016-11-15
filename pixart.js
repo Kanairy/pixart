@@ -42,12 +42,14 @@ function colorSquare(event){
 
 function stampSquare(event){
   var $square = $(event.target);
-  var image = $($($('.stamp')[0]).children()[0]).clone();
-  $square.append(image);
+  var image = "url(" + $($('.stamp')[0]).children()[0].src + ")";
+  // $square.append(image);
+  $square.css("background-image", image);
 }
 
 function fillSquare(event){
-  $(event.target).empty();
+  // $(event.target).empty();
+  $(event.target).css("background-image", "none");
   $(event.target).css("background-color", "transparent");
   if (mode === "paint"){
     colorSquare(event);
