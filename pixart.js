@@ -54,5 +54,14 @@ $('.square').mouseover(function() {
     var $source = $('#url-field').val()
     var $url = 'url(' + $source + ')'
     $(this).css({'background-image': $url, 'background-size': '70px' });
-
   });
+
+//change image box to url if button clicked
+
+$("#set-url").on('click', function(event) {
+  event.preventDefault();
+  var $source = $('#url-field').val()
+  var $url = 'url(' + $source + ')'
+  $('.image').css({'background-image': $url,  'background-size': '70px' });
+
+});
