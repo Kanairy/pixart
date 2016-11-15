@@ -1,5 +1,3 @@
-var input = $('#color-field').val();
-var stampInput = $('#stamp-field').val();
 var brushStatus = 'color'
 
 var makeSquares = function(){
@@ -11,6 +9,8 @@ var makeSquares = function(){
 
 $('#set-color').click(event => {
   event.preventDefault()
+  var input = $('#color-field').val();
+
   $('.brush')
   .css({
     "background-color" : input,
@@ -28,6 +28,7 @@ $('.square').hover(event => {
 
 $('#set-stamp').click(event => {
   event.preventDefault()
+  var stampInput = $('#stamp-field').val();
 
   $.ajax({
     url: 'http://www.omdbapi.com/',
@@ -35,8 +36,10 @@ $('#set-stamp').click(event => {
   })
   .done(response => {
     var poster = response.Search[0].Poster
-    $('.brush').css(
-      "background-image", 'url("' + poster + '")')
+    $('.brush').css({
+      "background-color" : 'none',
+      'background-image' : 'url("' + poster + '")'
+    });
       $('#stamp-field').val('');
       brushStatus = 'image'
     });
