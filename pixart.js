@@ -11,3 +11,8 @@
   input.keypress(function() {
     $brush.css('background-color', input.val());
   });
+
+for (var i = 0; i < 20; i++) {
+  var $div = $("<div>", { "class": "square"});
+  $('body').append($div)
+}
