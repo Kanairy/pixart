@@ -15,7 +15,7 @@ var makeSquares = function(){
   }
 }();
 
-$('.square').click(function(event){
+$('.square').hover(function(event){
   var input = $('#color-field').val();
   $(event.target).css( "background-color", input)
 })
