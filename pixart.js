@@ -33,3 +33,12 @@ $('.square').on('click',function(event) {
   //change div class background
 
 })
+
+//COMMIT 5
+//change color to input color
+
+$('.square').on('click',function(event) {
+  var color = $('#color-field').val()
+  $(event.target).css("background",color)
+  //change div class background
+})
