@@ -14,3 +14,8 @@ $('#set-color').click(event, function() {
 for (var i = 0; i < 20; i++) {
   $("body").append("<div class=square> </div>")
 }
+
+// Commit 4. Spen way too much time on this. I should really focus on making the code work, then thinking if it's good coding practise.
+$('.square').click(function() {
+  $(this).css("background", 'green')
+})
