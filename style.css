@@ -5,6 +5,13 @@
   margin: 15px auto;
 }
 
+.image {
+  width: 100px;
+  height: 100px;
+  background: url("http://i.onionstatic.com/avclub/5505/86/1x1/100.jpg");
+  margin: 15px auto;
+}
+
 .canvas {
   width: 300px;
 }
