@@ -16,3 +16,12 @@ $('#color-field').keypress(function(enter){
             $('#searchButton').click();//Trigger search button click event
         }
     });
+
+// Create 20 divs of the "square" class and append them to the body
+// Hint: use .append()
+
+
+for (var i = 0; i <= 20; i++){
+  var $div = $('<div>');
+  $('.main').append($div);
+}
