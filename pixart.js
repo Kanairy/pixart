@@ -1,16 +1,32 @@
+var selected = "";
+var color = "";
+var img_url = "";
+
+for (var i=0; i<2000; i++) {
+  $square = $('<div>').addClass('square');
+  $('.canvas').append($square);
+}
 
 $('#form').submit(function(event){
   event.preventDefault();
-  var input = $('#color-field').val();
-  $('.brush').css('backgroundColor',input);
+  color = $('#color-field').val();
+  $('.brush').css('backgroundColor', color);
+  $('.brush').css('backgroundImage', '');
+  selected = "color";
 });
 
-for (var i=0; i<20; i++) {
-  $square = $('<div>').addClass('square');
-  $('body').append($square);
-}
+$('#form-2').submit(function(event){
+  event.preventDefault();
+  img_url = $('#img-url-field').val();
+  $('.brush').css('backgroundImage', 'url(' + img_url + ')');
+  selected = "img_url";
+});
 
 $('.square').mouseover(function(event) {
-  var input = $('#color-field').val();
-  $(event.target).css('backgroundColor', input);
+  if (selected === "color") {
+    $(event.target).css('backgroundColor', color);
+  }
+  else if (selected === "img_url") {
+    $(event.target).css('backgroundImage', 'url(' + img_url + ')');
+  }
 });

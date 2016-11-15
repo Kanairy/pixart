@@ -3,6 +3,7 @@
   height: 100px;
   background: #1B4370;
   margin: 15px auto;
+  background-size: 100%;
 }
 
 .square {
@@ -11,6 +12,7 @@
   height: 10px;
   background: #E7E5DB;
   margin: 0;
+  background-size: 100%;
 }
 
 h1 {
@@ -24,4 +26,12 @@ h1 {
 
 body {
   background-image: url('ps_neutral.png');
+}
+
+.canvas {
+  margin: auto;
+  margin-bottom: 50px;
+  width: 500px;
+  height: 400px;
+
 }
