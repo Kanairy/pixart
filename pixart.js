@@ -26,4 +26,10 @@ for (i = 0; i < 20; i++) {
   body.append($(squares))
 }
 
-//commit 4
+//COMMIT 4
+//click on each square
+$('.square').on('click',function(event) {
+  $(event.target).css("background","green")
+  //change div class background
+
+})
