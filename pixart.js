@@ -11,4 +11,8 @@ $color.on("submit", changeColor(event));
 
 for (i=0; i<20; i++){
   $('body').append('<div class="square">');
+  $square = $('.square')
+  $square.on("click", function(){
+    $square.css("background", "green" )
+  });
 }
