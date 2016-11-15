@@ -2,10 +2,11 @@
 $('#set-color').click(function(event){
   event.preventDefault()
   var input = $('#color-field').val();
-
   $('.brush').css(
     "background-color", input)
 })
+
+
 
 var makeSquares = function(){
   for (var i = 0; i < 20; i++) {
@@ -13,3 +14,8 @@ var makeSquares = function(){
     $('body').append($square);
   }
 }();
+
+$('.square').click(function(event){
+  console.log('square clicked');
+  $(event.target).css('background-color', 'green')
+})
