@@ -25,3 +25,9 @@ create20Divs();
 $('.square').on('click', function(event) {
   $(this).css("background", 'green');
 });
+
+//commit 5
+$('.square').on('click', function(event) {
+  var color = $('#color-field').val();
+  $(this).css("background", color);
+});
