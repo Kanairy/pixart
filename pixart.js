@@ -16,7 +16,7 @@ $('#set-color').on('keydown', function(event) {
 })
 
 // commit 3 appending 20 divs of the square class
-for (var i = 0; i <= 20; i++) {
+for (var i = 0; i <= 200; i++) {
   var $newDiv = $('<div>').addClass('square');
   $('#square').append($newDiv);
 }
@@ -30,3 +30,12 @@ $('.square').on('mouseover', function(event) {
   var $input = $('#color-field').val();
   $(event.target).css('background-color', $input);
 })
+
+// commit 7 use ajax to upload image as the paint brush
+$('.square').on('mouseover', function(event) {
+  event.preventDefault();
+
+  var $input = $('#image-field').val();
+  var $url = 'url('+ $input +')';
+  $(event.target).css('background', $url);
+});
