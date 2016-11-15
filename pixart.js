@@ -21,8 +21,16 @@ $( "#set-color" ).keypress(function(event) {
 
 $(document).ready(function () {
     var $newdiv;
-    for (var i = 0; i < 21; i++) {
+    for (var i = 1; i < 21; i++) {
         $newdiv = $('<div class="brush" />')
         $('body').append($newdiv);
+        $newdiv.click (function(event){
+          event.preventDefault();
+          console.log(event.target);
+          $(event.target).css("background-color", "green");
+        })
+
+
+
     }
 });
