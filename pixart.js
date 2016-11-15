@@ -31,3 +31,9 @@ $('.square').on('click', function(event) {
   var color = $('#color-field').val();
   $(this).css("background", color);
 });
+
+// commit 6
+$('.square').on('mouseover', function(event) {
+  var color = $('#color-field').val();
+  $(this).css("background", color);
+});
