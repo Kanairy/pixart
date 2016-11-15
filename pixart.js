@@ -1,4 +1,5 @@
-var NUM_SQUARES = 20;
+var ROWS = 20;
+var COLUMNS = 20;
 
 // Grab DOM elements
 var $brush = $('.brush');
@@ -21,9 +22,13 @@ $('#stamp-form').submit(function(e) {
 });
 
 // Append squares to body
-for (var i = 0; i < NUM_SQUARES; i++) {
-  var $square = $('<div>').addClass('square');
-  $('body').append($square);
+for (var i = 0; i < ROWS; i++) {
+  var $row = $('<div>');
+  for (var j = 0; j < COLUMNS; j++) {
+    var $square = $('<div>').addClass('square');
+    $row.append($square);
+  }
+  $('body').append($row);
 }
 
 // Change square fill
