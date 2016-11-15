@@ -17,3 +17,8 @@ for (var i = 0; i < NUM_SQUARES; i++) {
   var $square = $('<div>').addClass('square');
   $('body').append($square);
 }
+
+// Change square colour on click
+$('body').on('click', '.square', function(e) {
+  $(e.target).css('background-color', 'green');
+});
