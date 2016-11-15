@@ -1,7 +1,7 @@
 var $setColorBtn = $('#set-color');
 var $brushDiv = $('.brush');
 var $colorInput = $('#color-field');
-var $body = $('body');
+var $canvas = $('.canvas');
 
 var changeBrushColor = function(e) {
   e.preventDefault();
@@ -12,10 +12,10 @@ var changeColor = function(e) {
   $(e.target).css('background', $brushDiv.css('background'));
 }
 
-for (var i = 0; i < 20; i++) {
+for (var i = 0; i < 100; i++) {
   var $squareDiv = $('<div class="square">');
   $squareDiv.hover(changeColor);
-  $body.append($squareDiv);
+  $canvas.append($squareDiv);
 }
 
 $setColorBtn.click(changeBrushColor);

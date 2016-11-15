@@ -5,10 +5,14 @@
   margin: 15px auto;
 }
 
+.canvas {
+  width: 300px;
+}
+
 .square {
   float: left;
-  width: 10px;
-  height: 10px;
+  width: 30px;
+  height: 30px;
   background: #E7E5DB;
   margin: 0;
 }
