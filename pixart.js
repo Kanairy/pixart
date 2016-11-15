@@ -15,3 +15,14 @@ $( "#set-color" ).keypress(function(event) {
   var input = $('#color-field').val();
   $(".brush").css("background-color", input);
 });
+
+// * Create 20 divs of the "square" class and append them to the body
+//   * **Hint**: use `.append()`
+
+$(document).ready(function () {
+    var $newdiv;
+    for (var i = 0; i < 21; i++) {
+        $newdiv = $('<div class="brush" />')
+        $('body').append($newdiv);
+    }
+});
