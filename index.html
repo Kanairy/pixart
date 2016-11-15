@@ -9,11 +9,19 @@
   <h1>Pixel Art!</h1>
   <div class="controls">
     <form id="form">
-      <input type="text" id="color-field"></input>
+      <input type="text" id="color-field" placeholder="Color Hex"></input>
+      <input type="text" id="image-url" placeholder="Image URL"></input>
       <button id="set-color">Set Color</button>
+      <label>
+        <input type="radio" name="stamp" checked="checked" value="color">Color
+      </label>
+      <label>
+        <input type="radio" name="stamp">Image
+      </label>
     </form>
     <div class="brush"></div>
   </div>
+  <div class="canvas"></div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="pixart.js"></script>
 </body>

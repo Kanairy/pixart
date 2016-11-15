@@ -13,6 +13,17 @@
   margin: 0;
 }
 
+.canvas {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.canvas:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 h1 {
   font-size: 48px;
   text-align: center;
@@ -24,4 +35,8 @@ h1 {
 
 body {
   background-image: url('ps_neutral.png');
+}
+
+input[type="radio"] {
+  display: inline;
 }
