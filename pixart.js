@@ -25,5 +25,7 @@ for (var i = 0; i <= 20; i++) {
 $('.square').on('click', function(event) {
   event.preventDefault();
 
-  $(event.target).css('background-color', 'green');
+// commit 5 allow user to choose color by selecting in the input
+  var $input = $('#color-field').val();
+  $(event.target).css('background-color', $input);
 })
