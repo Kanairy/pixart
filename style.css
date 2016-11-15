@@ -6,6 +6,12 @@
   margin: 15px auto;
 }
 
+.stamp {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .square {
   float: left;
   width: 10px;
