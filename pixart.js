@@ -22,7 +22,12 @@ $(document).ready(function(){
   // });
 
   //COMMIT 5
-  $("body").on("click", ".square", function(e) {
+  // $("body").on("click", ".square", function(e) {
+  //   $(e.target).css({ "background-color": "#"+$("#color-field").val() });
+  // });
+
+  //COMMIT 6
+  $("body").on("mouseover", ".square", function(e) {
     $(e.target).css({ "background-color": "#"+$("#color-field").val() });
   });
 });
