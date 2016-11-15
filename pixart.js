@@ -16,4 +16,9 @@ $(document).ready(function(){
     $("<div>", { class: "square" }).appendTo("body");
   }
 
+  // COMMIT 4
+  $("body").on("click", ".square", function(e) {
+    $(e.target).css({ "background-color": "green" });
+  });
+
 });
