@@ -19,10 +19,11 @@ $('#set-color').on('keypress',function(event) {
 
 //COMMIT 3
 //create and append 20 divs of the "square" class to the body
-var squares = $("<div>",{
-  class: "square"
-})
+var squares = '<div class="square"/>';
+var body = $('body');
 
-for (i=0; i<20; i++) {
-  $('body').append($(squares))
+for (i = 0; i < 20; i++) {
+  body.append($(squares))
 }
+
+//commit 4
