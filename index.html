@@ -5,14 +5,20 @@
   <link rel="stylesheet" href="style.css">
   <title>i &hearts; js</title>
 </head>
-<body>
+<body class="main">
   <h1>Pixel Art!</h1>
   <div class="controls">
     <form id="form">
       <input type="text" id="color-field"></input>
       <button id="set-color">Set Color</button>
     </form>
-    <div class="brush"></div>
+      <div class="brush"></div>
+
+    <form id="image-search">
+      <input type="text" id="url-field"></input>
+      <button id="set-url">Image URL</button>
+    </form>
+    <div class="image"></div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="pixart.js"></script>

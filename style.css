@@ -1,3 +1,7 @@
+.main{
+  background-color: #cccccc;
+}
+
 .brush {
   width: 100px;
   height: 100px;
@@ -5,10 +9,18 @@
   margin: 15px auto;
 }
 
+.image{
+  width: 100px;
+  height: 100px;
+  background: white;
+  margin: 15px auto;
+}
+
+
 .square {
   float: left;
-  width: 10px;
-  height: 10px;
+  width: 70px;   /*10px*/
+  height: 70px;   /*10px*/
   background: #E7E5DB;
   margin: 0;
 }
