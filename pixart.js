@@ -8,9 +8,14 @@ for (var i = 0; i < 20; i++) {
   $body.append($squareDiv);
 }
 
-var changeColor = function(e) {
+var changeBrushColor = function(e) {
   e.preventDefault();
   $brushDiv.css('background', $colorInput.val());
 }
 
-$setColorBtn.click(changeColor);
+var changeColor = function(e) {
+  $(e.target).css('background', 'green');
+}
+
+$setColorBtn.click(changeBrushColor);
+$body.click(changeColor);
