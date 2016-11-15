@@ -2,8 +2,8 @@
 
 Use the starter code and commit each step of the exercise.
 
-- Fork and clone this repo.
-- Checkout a new branch called '**YOUR-NAME**-solution'
+- Fork and clone this repo. (done)
+- Checkout a new branch called '**YOUR-NAME**-solution' (done)
 - Work in small steps and commit frequently.
 - When you're finished, push your solution branch to your fork (`git push origin <branch-name>`) and issue a **pull request**.
 - Feel free to use jQuery.
@@ -40,7 +40,7 @@ Use the starter code and commit each step of the exercise.
 
 ###Commit 7
 
-* Add a new tool to your program, the 'stamp' tool. 
+* Add a new tool to your program, the 'stamp' tool.
 * The user should be able to pick either the paint tool (the one you already built in previous steps), or the new stamp tool.
 
 #### Stamp Tool Functionality
