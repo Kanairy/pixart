@@ -9,3 +9,7 @@ for (var i=0; i<20; i++) {
   $square = $('<div>').addClass('square');
   $('body').append($square);
 }
+
+$('.square').click(function(event) {
+  $(event.target).css('backgroundColor', 'green');
+});
