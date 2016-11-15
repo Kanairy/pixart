@@ -19,7 +19,7 @@ var create20Divs = function() {
     $('.controls').append( $('<div>',{class: 'square'}) );
   }
 };
-create20Divs();
+// create20Divs();
 
 // commit 4
 $('.square').on('click', function(event) {
@@ -36,4 +36,22 @@ $('.square').on('click', function(event) {
 $('.square').on('mouseover', function(event) {
   var color = $('#color-field').val();
   $(this).css("background", color);
+});
+
+//commit 7
+var createDivs = function() {
+  for (var i = 0; i < 304; i++) {
+    $('.draw').append( $('<div>',{class: 'square'}) );
+  }
+};
+createDivs();
+
+$('#set-img').on('click', function(event) {
+  event.preventDefault();
+  var img = $('#img-field').val();
+  $('.brush').css("background", "url("+img+")");
+})
+$('.square').on('mouseover', function(event) {
+  var img = $('#img-field').val();
+  $(this).css("background", "url("+img+")");
 });
