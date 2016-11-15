@@ -42,3 +42,11 @@ $('.square').on('click',function(event) {
   $(event.target).css("background",color)
   //change div class background
 })
+
+//commit 6
+$('.square').css({width: '10px', margin: 0})
+$('.square').on('mouseover',function(event) {
+  var color = $('#color-field').val()
+  $(event.target).css("background",color)
+  //change div class background
+})
