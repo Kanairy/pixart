@@ -21,9 +21,9 @@ for (var i=0; i<20; i++) {
     $("body").append("<div class='square'></div>");
 };
 
-// change individual to green and now brush_color
+// change individual to green and now brush_color / now mouseover
 $(document).ready(function() {
-  $('body').click(function(e) {
+  $('body').mouseover(function(e) {
     e.preventDefault();
     $( e.target ).closest('.square').css('background-color', brush_color);
   });
