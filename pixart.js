@@ -23,3 +23,9 @@ var board = function() {
 board.addEventListener('click', function(event) {
   event.target.style.backgroundColor = colorField;
 });
+
+body.addEventListener('mouseover', function(eventObject) {
+  if (eventObject.target.className === "square") {
+    eventObject.target.style.backgroundColor = input.value;
+  }
+});
