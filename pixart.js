@@ -1,0 +1,41 @@
+
+// Commit 1 change the color of the box on click
+$('#set-color').on('click', function(event) {
+  event.preventDefault();
+
+  var $input = $('#color-field').val();
+  $('.brush').css("background-color", $input );
+})
+
+// Commit 2 change the color of the box when enter is pressed
+$('#set-color').on('keydown', function(event) {
+  event.preventDefault();
+
+  var $input = $('#color-field').val();
+  $('.brush').css("background-color", $input );
+})
+
+// commit 3 appending 20 divs of the square class
+for (var i = 0; i <= 200; i++) {
+  var $newDiv = $('<div>').addClass('square');
+  $('#square').append($newDiv);
+}
+
+// commit 4 changing color of squares to green on click
+// commit 6 changed from click to mouseover
+$('.square').on('mouseover', function(event) {
+  event.preventDefault();
+
+// commit 5 allow user to choose color by selecting in the input
+  var $input = $('#color-field').val();
+  $(event.target).css('background-color', $input);
+})
+
+// commit 7 use ajax to upload image as the paint brush
+$('.square').on('mouseover', function(event) {
+  event.preventDefault();
+
+  var $input = $('#image-field').val();
+  var $url = 'url('+ $input +')';
+  $(event.target).css('background', $url);
+});
