@@ -7,3 +7,7 @@
     e.preventDefault();
     $brush.css('background-color', input.val());
   });
+
+  input.keypress(function() {
+    $brush.css('background-color', input.val());
+  });
