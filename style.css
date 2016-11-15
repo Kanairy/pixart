@@ -11,8 +11,14 @@
   height: 10px;
   background: #E7E5DB;
   margin: 0;
+  background-size: cover;
 }
 
+img {
+  width: 5px;
+  height: 5px;
+
+}
 h1 {
   font-size: 48px;
   text-align: center;

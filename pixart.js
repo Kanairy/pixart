@@ -1,3 +1,6 @@
+var brush_color= "blue";
+var stamp = "cert_stamp.png"
+
 $(document).ready(function() {
   $('#set-color').click(function(e) {
     e.preventDefault();
@@ -17,14 +20,22 @@ $(document).ready(function() {
 });
 
 // create 20 square class divs
-for (var i=0; i<20; i++) {
+for (var i=0; i<2020; i++) {
     $("body").append("<div class='square'></div>");
 };
 
-// change individual to green and now brush_color / now mouseover
+// change individual to green and now brush_color / now mouseover / now stamp option
 $(document).ready(function() {
   $('body').mouseover(function(e) {
     e.preventDefault();
-    $( e.target ).closest('.square').css('background-color', brush_color);
+    pen = $( ".stamp_select" ).val();
+    if (pen == "color") {
+      $( e.target ).closest('.square').css('background-color', brush_color);
+    } else {
+      $( e.target ).closest('.square').css('background-color', "none");
+      $( e.target ).closest('.square').css("background-image", "url(cert_stamp.png) ");
+
+    }
+
   });
 });
