@@ -5,12 +5,25 @@
   margin: 15px auto;
 }
 
+.stamp {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  margin: 15px auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
 .square {
   float: left;
   width: 10px;
   height: 10px;
   background: #E7E5DB;
   margin: 0;
+  background-size: cover;
 }
 
 h1 {
