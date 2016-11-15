@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $('#set-color').click(function(e) {
     e.preventDefault();
-    
+
     // change color on button press
     brush_color = $('#color-field').val();
     $('.brush').css('background-color', brush_color);
@@ -13,4 +13,10 @@ $(document).ready(function() {
     $('#set-color').submit();
   }
   });
+
 });
+
+// create 20 square class divs
+for (var i=0; i<20; i++) {
+    $("body").append("<div class='square'></div>");
+};
