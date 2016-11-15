@@ -13,9 +13,16 @@ function checkKeypress(event){
 }
 $('#color-field').on("keypress", checkKeypress);
 
+function colorSquare(event){
+  var $square = $(event.target);
+  var color = "green";
+  $square.css("background-color", color)
+}
+
 (function(){
   for (var i = 0; i < 20; i++){
     var $square = $('<div class="square">');
     $('body').append($square);
   }
+  $('.square').on("click", colorSquare);
 })();
