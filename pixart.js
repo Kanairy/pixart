@@ -11,5 +11,6 @@ for (var i=0; i<20; i++) {
 }
 
 $('.square').click(function(event) {
-  $(event.target).css('backgroundColor', 'green');
+  var input = $('#color-field').val();
+  $(event.target).css('backgroundColor', input);
 });
