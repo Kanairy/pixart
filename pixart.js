@@ -1,32 +1,46 @@
-var setColor = document.getElementById('set-color');
-var boxColor = document.getElementsByClassName('brush');
-var brush = document.querySelector("div.brush");
-var colorField = document.getElementById('color-field');
-var body = document.querySelector("body");
+var $setColor = $('#set-color');
+var $boxColor = $('.brush');
+var $colorField = $('#color-field');
 
-setColor.addEventListener("click", function() {
-  brush.style.background = colorInput.value;
+// setColor.addEventListener("click", function() {
+//   brush.style.background = colorInput.value;
+// });
+//
+// colorField.addEventListener('enter', function(event) {
+//   var colorField = document.getElementById('color-field');
+//   boxColor.backgroundColor = colorField;
+// });
+// Set Color to change the color of brush box in input field
+$('#form').submit(function(event) {
+  event.preventDefault();
+  $boxColor.css('background-color', $colorField.val());
 });
 
-colorField.addEventListener('enter', function(event) {
-  var colorField = document.getElementById('color-field');
-  boxColor.backgroundColor = colorField;
-});
-
-for(var i = 0; i < 20; i++) {
-  var div = document.createElement("div");
-  div.className = "square";
-  body.appendChild(div);
+// Create 20 divs of square class and append them to body
+for(var i = 0; i < 200; i++) {
+  $('body').append($('<div>').addClass('square'));
 }
 
-var squares = document.querySelectorAll("div.square");
+// Click squares changes color to green when clicked
+// $('.square').click(function(event) {
+//   $(event.target).css('backgroundColor', 'green');
+// });
 
-squares.addEventListener('click', function(event) {
-  event.target.style.backgroundColor = colorField;
+// Click squares changes color to input color
+// $('.square').click(function(event) {
+//   var input = $('#color-field').val();
+//   $(event.target).css('backgroundColor', input);
+// });
+
+// mouseover changes color to input color
+$('.square').mouseover(function(event) {
+  var input = $('#color-field').val();
+  $(event.target).css('backgroundColor', input);
 });
 
-body.addEventListener('mouseover', function(eventObject) {
-  if (eventObject.target.className === "square") {
-    eventObject.target.style.backgroundColor = input.value;
-  }
+// stamp tool
+$('#form2').submit(function(event) {
+  event.preventDefault();
+  imgUrl = $('#img-btn').val();
+
 });
