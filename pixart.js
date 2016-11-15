@@ -31,3 +31,11 @@ for (var i = 0; i <= 20; i++){
 $('.square').click(function() {
      $(this).css({'background-color': 'green'});
   });
+
+// Modify your code so that when I click on each "square",
+// it changes to the color I set using my input instead of "green" every time.
+
+$('.square').click(function() {
+    var $input = $('#color-field').val();
+     $(this).css({'background-color': $input});
+  });
